@@ -18,6 +18,7 @@
 		5645F7CD2920B83B00037FA0 /* first_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5645F7CB2920B83B00037FA0 /* first_app.cpp */; };
 		5645F7D42920C47200037FA0 /* lve_pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5645F7D22920C47200037FA0 /* lve_pipeline.cpp */; };
 		5645F7DA2920D2BF00037FA0 /* lve_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5645F7D82920D2BF00037FA0 /* lve_device.cpp */; };
+		5645F7DD292120C100037FA0 /* lve_swap_chain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5645F7DB292120C100037FA0 /* lve_swap_chain.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,8 @@
 		5645F7D32920C47200037FA0 /* lve_pipeline.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lve_pipeline.hpp; sourceTree = "<group>"; };
 		5645F7D82920D2BF00037FA0 /* lve_device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lve_device.cpp; sourceTree = "<group>"; };
 		5645F7D92920D2BF00037FA0 /* lve_device.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lve_device.hpp; sourceTree = "<group>"; };
+		5645F7DB292120C100037FA0 /* lve_swap_chain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lve_swap_chain.cpp; sourceTree = "<group>"; };
+		5645F7DC292120C100037FA0 /* lve_swap_chain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lve_swap_chain.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				5645F7CC2920B83B00037FA0 /* first_app.hpp */,
 				5645F7D22920C47200037FA0 /* lve_pipeline.cpp */,
 				5645F7D32920C47200037FA0 /* lve_pipeline.hpp */,
+				5645F7DB292120C100037FA0 /* lve_swap_chain.cpp */,
+				5645F7DC292120C100037FA0 /* lve_swap_chain.hpp */,
 			);
 			path = VulkanEngine;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 				5645F7D42920C47200037FA0 /* lve_pipeline.cpp in Sources */,
 				5645F7B82920AEF000037FA0 /* main.cpp in Sources */,
 				5645F7C92920B50000037FA0 /* lve_window.cpp in Sources */,
+				5645F7DD292120C100037FA0 /* lve_swap_chain.cpp in Sources */,
 				5645F7DA2920D2BF00037FA0 /* lve_device.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
