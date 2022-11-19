@@ -44,7 +44,11 @@ void FirstApp::createPipelineLayout(){
     }
 }
 void FirstApp::createPipeline(){
-    auto pipelineConfig = LvePipeline::defaultPipelineConfigInfo(WIDTH, HEIGHT);
+    PipelineConfigInfo pipelineConfig{};
+    LvePipeline::defaultPipelineConfigInfo(
+           pipelineConfig,
+           lveSwapChain.width(),
+           lveSwapChain.height());
     pipelineConfig.renderPass = lveSwapChain.getRenderPass();
     pipelineConfig.pipelineLayout = pipelineLayout;
     lvePipeline = std::make_unique<LvePipeline>(
