@@ -8,6 +8,7 @@
 #ifndef lve_pipeline_hpp
 #define lve_pipeline_hpp
 
+#include "lve_model.hpp"
 #include "lve_device.hpp"
 #include <string>
 #include <vector>

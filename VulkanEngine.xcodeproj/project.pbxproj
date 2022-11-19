@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5632A2BB2928BBBA003F25FA /* lve_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5632A2B92928BBBA003F25FA /* lve_model.cpp */; };
 		5645F7B82920AEF000037FA0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5645F7B72920AEF000037FA0 /* main.cpp */; };
 		5645F7C02920B0EE00037FA0 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5645F7BF2920B0EE00037FA0 /* libglfw.3.3.dylib */; };
 		5645F7C22920B11500037FA0 /* libvulkan.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5645F7C12920B11500037FA0 /* libvulkan.1.dylib */; };
@@ -37,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5632A2B92928BBBA003F25FA /* lve_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lve_model.cpp; sourceTree = "<group>"; };
+		5632A2BA2928BBBA003F25FA /* lve_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lve_model.hpp; sourceTree = "<group>"; };
 		5645F7B42920AEF000037FA0 /* VulkanEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VulkanEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		5645F7B72920AEF000037FA0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5645F7BF2920B0EE00037FA0 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				5645F7D32920C47200037FA0 /* lve_pipeline.hpp */,
 				5645F7DB292120C100037FA0 /* lve_swap_chain.cpp */,
 				5645F7DC292120C100037FA0 /* lve_swap_chain.hpp */,
+				5632A2B92928BBBA003F25FA /* lve_model.cpp */,
+				5632A2BA2928BBBA003F25FA /* lve_model.hpp */,
 			);
 			path = VulkanEngine;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				5645F7CD2920B83B00037FA0 /* first_app.cpp in Sources */,
 				5645F7D42920C47200037FA0 /* lve_pipeline.cpp in Sources */,
 				5645F7B82920AEF000037FA0 /* main.cpp in Sources */,
+				5632A2BB2928BBBA003F25FA /* lve_model.cpp in Sources */,
 				5645F7C92920B50000037FA0 /* lve_window.cpp in Sources */,
 				5645F7DD292120C100037FA0 /* lve_swap_chain.cpp in Sources */,
 				5645F7DA2920D2BF00037FA0 /* lve_device.cpp in Sources */,
