@@ -53,14 +53,24 @@ void FirstApp::loadGameObjects() {
     };
     auto lveModel = std::make_shared<LveModel>(lveDevice, vertices);
     
-    auto triangle = LveGameObject::createGameObject();
-    triangle.model = lveModel;
-    triangle.color = {.1f, .8f, .1f};
-    triangle.transform2d.translation.x = .2f;
-    triangle.transform2d.scale = {1.f, .5f};
-    triangle.transform2d.rotation = .25f * glm::two_pi<float>();
-    
-    gameObjects.push_back(std::move(triangle));
+    for (int i = 0; i < 10; i++) {
+        auto triangle = LveGameObject::createGameObject();
+        triangle.model = lveModel;
+        triangle.color = {.2f + i * 0.02, .3f + i *0.01, .1f + i * 0.03};
+        triangle.transform2d.translation.x = .0f;
+        triangle.transform2d.scale = {.2f + i * 0.1, .2f + i * 0.1};
+        triangle.transform2d.rotation = .25f * glm::two_pi<float>();
+        
+        gameObjects.push_back(std::move(triangle));
+    }
+//    auto triangle = LveGameObject::createGameObject();
+//    triangle.model = lveModel;
+//    triangle.color = {.1f, .8f, .1f};
+//    triangle.transform2d.translation.x = .2f;
+//    triangle.transform2d.scale = {1.f, .5f};
+//    triangle.transform2d.rotation = .25f * glm::two_pi<float>();
+//
+//    gameObjects.push_back(std::move(triangle));
 }
 
 void FirstApp::createPipelineLayout(){
@@ -192,7 +202,7 @@ void FirstApp::renderGameObjects(VkCommandBuffer commandBuffer){
     lvePipeline->bind(commandBuffer);
     
     for(auto& obj : gameObjects) {
-       obj.transform2d.rotation = glm::mod(obj.transform2d.rotation + 0.01f, glm::two_pi<float>());
+       obj.transform2d.rotation = glm::mod(obj.transform2d.rotation + 0.01f * obj.getId(), glm::two_pi<float>());
 
        SimplePushConstantData push{};
        push.offset = obj.transform2d.translation;
