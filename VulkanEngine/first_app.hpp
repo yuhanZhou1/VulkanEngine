@@ -34,7 +34,7 @@ private:
     
     void loadGameObjects();
     
-    LveWindow lveWindow{WIDTH,HEIGHT,"Hello Vulkan"};
+    LveWindow lveWindow{WIDTH,HEIGHT,"Vulkan Engine"};
     LveDevice lveDevice{lveWindow};
     LveRenderer lveRenderer{lveWindow, lveDevice};
     std::vector<LveGameObject> gameObjects;
