@@ -23,6 +23,8 @@ public:
     LveWindow(const LveWindow &) = delete;
     LveWindow &operator=(const LveWindow &) = delete;
     
+    GLFWwindow *getGLFWwindow() const { return window; }
+    
     void createWindowSurface(VkInstance instance, VkSurfaceKHR *surface);
     
     bool shouldClose(){ return glfwWindowShouldClose(window); }

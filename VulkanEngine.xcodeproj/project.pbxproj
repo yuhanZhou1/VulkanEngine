@@ -24,6 +24,7 @@
 		56EF79E0293B1AC300E19ECE /* lve_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56EF79DE293B1AC300E19ECE /* lve_renderer.cpp */; };
 		56EF79E3293B1AD300E19ECE /* simple_render_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56EF79E1293B1AD300E19ECE /* simple_render_system.cpp */; };
 		56EF79E6293C94BE00E19ECE /* lve_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56EF79E4293C94BE00E19ECE /* lve_camera.cpp */; };
+		56EF79E9293CA28200E19ECE /* keyboard_movement_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56EF79E7293CA28200E19ECE /* keyboard_movement_controller.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +71,8 @@
 		56EF79E2293B1AD300E19ECE /* simple_render_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simple_render_system.hpp; sourceTree = "<group>"; };
 		56EF79E4293C94BE00E19ECE /* lve_camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lve_camera.cpp; sourceTree = "<group>"; };
 		56EF79E5293C94BE00E19ECE /* lve_camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lve_camera.hpp; sourceTree = "<group>"; };
+		56EF79E7293CA28200E19ECE /* keyboard_movement_controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = keyboard_movement_controller.cpp; sourceTree = "<group>"; };
+		56EF79E8293CA28200E19ECE /* keyboard_movement_controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = keyboard_movement_controller.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				56EF79E2293B1AD300E19ECE /* simple_render_system.hpp */,
 				56EF79E4293C94BE00E19ECE /* lve_camera.cpp */,
 				56EF79E5293C94BE00E19ECE /* lve_camera.hpp */,
+				56EF79E7293CA28200E19ECE /* keyboard_movement_controller.cpp */,
+				56EF79E8293CA28200E19ECE /* keyboard_movement_controller.hpp */,
 			);
 			path = VulkanEngine;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				5632A2BE292A1366003F25FA /* lve_game_object.cpp in Sources */,
 				56EF79E6293C94BE00E19ECE /* lve_camera.cpp in Sources */,
 				5645F7B82920AEF000037FA0 /* main.cpp in Sources */,
+				56EF79E9293CA28200E19ECE /* keyboard_movement_controller.cpp in Sources */,
 				5632A2BB2928BBBA003F25FA /* lve_model.cpp in Sources */,
 				5645F7C92920B50000037FA0 /* lve_window.cpp in Sources */,
 				5645F7DD292120C100037FA0 /* lve_swap_chain.cpp in Sources */,
